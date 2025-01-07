@@ -79,19 +79,22 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 20px 0;
-    color: #FFFFFF;
+    color: black;
     font-weight: 500;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--dark);
+    color: #009CFF;
 }
 
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+}
+.logo{
+    width: 100px;
 }
 
 @media (max-width: 991.98px) {
@@ -103,6 +106,68 @@
     .navbar .navbar-nav {
         margin-top: 8px;
         border-top: 1px solid rgba(256, 256, 256, .1)
+    }
+}
+/* General navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo alignment */
+.logo-container {
+    flex: 1;
+    text-align: left;
+}
+.nav-cont{
+    padding-left: 20%;
+}
+
+/* Hamburger icon alignment */
+.navbar-toggler {
+    flex: 0 0 auto;
+    text-align: right;
+}
+
+/* Center navigation items */
+.collapse {
+    flex-grow: 1;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+/* Navbar links spacing */
+.navbar-nav a {
+    margin: 0 10px;
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    /* Hide social icons on smaller screens */
+    .social-icons {
+        display: none;
+    }
+
+    /* Ensure logo is aligned to the left */
+    .logo-container {
+        flex: 1 1 auto;
+    }
+
+    /* Navbar-collapse alignment for mobile */
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    /* Ensure toggler stays right-aligned */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 10px;
     }
 }
 

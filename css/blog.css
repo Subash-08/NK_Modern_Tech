@@ -1,0 +1,91 @@
+/* General Body and Font Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Blog Post Section Styling */
+.blog-post {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+}
+
+/* Image Styling */
+.blog-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Blog Post Heading Styling */
+.blog-post h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Read More Link Styling */
+.blog-post a {
+    font-size: 16px;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .blog-post {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .blog-post h2 {
+        font-size: 24px;
+    }
+
+    .blog-post p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.trusted-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #002855;
+    margin-bottom: 20px;
+}
+
+/* Logo Slider */
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo-track {
+    display: flex;
+    width: calc(200px * 10 * 2); /* Adjusted for infinite loop effect */
+    animation: scroll 22s linear infinite;
+}
+
+.logo-item {
+    width: 150px;
+    height: auto;
+    margin: 0 20px;
+}
+
+/* Scrolling Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

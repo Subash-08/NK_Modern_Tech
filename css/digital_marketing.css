@@ -1,3 +1,6 @@
+
+
+
 .about-us {
     background-color: #f9faff;
   }
@@ -577,5 +580,9 @@ img {
 .attractions .owl-nav .owl-next:hover {
   background: var(--bs-white);
   color: var(--bs-primary);
+}
+
+.owl-carousel {
+  display: block;
 }
 /*** Attractions End ***/

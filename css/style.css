@@ -5,6 +5,77 @@
     --light: #F8F8F8;
     --dark: #252525;
 }
+.footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer .container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer .col-lg-3 {
+    min-width: 250px; /* Ensures each column doesn't shrink too much */
+    padding: 0px;
+}
+
+.footer .btn-link {
+    display: block; /* Ensures links don’t overlap */
+    margin-bottom: 8px;
+}
+
+@media (max-width: 1150px) and (min-width: 1000px) {
+    .newsletter .position-relative {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .newsletter button {
+        width: 100%;
+    }
+}
+.footer .col-lg-3:nth-child(4) {
+    padding: 25px;
+}
+@media (max-width: 1300px) {
+    .footer .row {
+        flex-wrap: wrap;
+        justify-content: center; /* Centers the columns */
+        /* text-align: center; */
+    }
+
+    .footer .col-lg-3 {
+        width: 50%; /* Makes two columns per row */
+        margin-bottom: 20px; /* Adds space between elements */
+        padding: 24px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer .col-lg-3 {
+        width: 100%; /* Stacks all columns in one row */
+        
+    }
+
+    .footer p {
+        flex-direction: column; /* Icon on top, text below for small screens */
+    }
+}
 
 .back-to-top {
     position: fixed;
@@ -13,7 +84,24 @@
     bottom: 30px;
     z-index: 99;
 }
-
+.project-carousel img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.project-item {
+    text-align: center;
+}
+.project-item h6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.project-item span {
+    font-size: 14px;
+    color: gray;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -84,9 +172,11 @@
     outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:hover{
+    color: #009CFF !important;
+}
 .navbar .navbar-nav .nav-link.active {
-    color: #009CFF;
+    color: #009CFF !important;
 }
 
 .navbar.sticky-top {

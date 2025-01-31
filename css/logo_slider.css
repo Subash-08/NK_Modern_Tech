@@ -1,10 +1,4 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f9fa;
-}
-
 .trusted-section {
     max-width: 1200px;
     margin: auto;

@@ -80,6 +80,44 @@
         }
     });
 
+    // attractions carousel
+    $(".attractions-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 2000,
+        center: false,
+        dots: false,
+        loop: true,
+        margin: 25,
+        nav : true,
+        navText : [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ],
+        responsiveClass: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1200:{
+                items:5
+            },
+            1400:{
+                items:5
+            }
+        }
+    });
+
+   
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
@@ -109,4 +147,5 @@
 
     
 })(jQuery);
+
 

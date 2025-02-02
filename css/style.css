@@ -76,7 +76,6 @@
         flex-direction: column; /* Icon on top, text below for small screens */
     }
 }
-
 .back-to-top {
     position: fixed;
     display: none;
@@ -252,7 +251,9 @@
     .navbar-collapse {
         justify-content: center;
     }
-
+    .getstarted{
+        display: none;
+    }
     /* Ensure toggler stays right-aligned */
     .navbar-toggler {
         position: absolute;
@@ -271,7 +272,7 @@
         transition: .5s;
         opacity: 0;
     }
-
+    
     .navbar .nav-item:hover .dropdown-menu {
         transform: rotateX(0deg);
         visibility: visible;

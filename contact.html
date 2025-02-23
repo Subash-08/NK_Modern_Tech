@@ -45,7 +45,7 @@
    <!-- Navbar & Hero Start -->
    <div class="container-fluid bg-white nav-bar sticky-top px-5 py-2 py-lg-0">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a href="index.html" class="navbar-brand p-0">
+        <a href="index" class="navbar-brand p-0">
             <img class="logo" src="img/Nk_logo2.png">
             <!-- <img src="img/logo.png" alt="Logo"> -->
         </a>
@@ -57,20 +57,20 @@
 
             
             <div class="navbar-nav mx-auto py-0 nav-cont">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="index" class="nav-item nav-link active">Home</a>
+                <a href="about" class="nav-item nav-link">About</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                     <div class="dropdown-menu m-0">
-                        <a href="digital_marketing.html" class="dropdown-item">Digital Marketing</a>
-                        <a href="web_development.html" class="dropdown-item">Web Development</a>
-                        <a href="data_science.html" class="dropdown-item">Data Science</a>
+                        <a href="digital_marketing" class="dropdown-item">Digital Marketing</a>
+                        <a href="web_development" class="dropdown-item">Web Development</a>
+                        <a href="data_science" class="dropdown-item">Data Science</a>
                     </div>
                 </div>
-                <a href="feature.html" class="nav-item nav-link">Feature</a>
-                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <a href="feature" class="nav-item nav-link">Feature</a>
+                <a href="blog" class="nav-item nav-link">Blog</a>
                 
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact" class="nav-item nav-link">Contact</a>
             </div>
             <div class="team-icon d-none d-xl-flex justify-content-center me-3">
                 <a class="btn btn-square text-primary btn-light rounded-circle mx-1" href="https://www.facebook.com/profile.php?id=61556951956856&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
@@ -101,43 +101,71 @@
     <!-- Page Header End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl my-5 py-5">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="section-title bg-white text-center text-primary px-3">Contact Us</h6>
-                <h1 class="display-6 mb-4">If You Have Any Query, Please Feel Free Contact Us</h1>
-            </div>
-            <div class="row g-0 justify-content-center">
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.5s">
-                    <form>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="fs-5 fw-medium text-primary">Get In Touch</p>
+                    <h1 class="display-5 mb-4">Need Cutting-Edge Tech Solutions? We’ve Got You Covered!</h1>
+                    <p>At NK Modern Technology, we provide innovative IT solutions tailored to your business needs. Whether it's software development, cloud services, or cybersecurity, our team is here to deliver excellence.</p>
+                    <p class="mb-4">Fill out the form to request a free consultation, and we’ll get back to you with customized tech solutions for your business.</p>
+                    <a href="tel:8807668998" aria-label="Call Us" class="d-inline-flex align-items-center rounded overflow-hidden border border-primary">
+                        <span class="btn-lg-square bg-primary d-flex justify-content-center align-items-center" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-white" style="transform: rotate(90deg) !important;"></i>
+                        </span>
+                        <span class="fs-5 fw-medium mx-4">8807668998</span>
+                    </a>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <h1 class="mb-5 fw-bold">Request A Free Consultation</h1>
+                    <form id="quote-form">
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name">
                                     <label for="name">Your Name</label>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sm-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="mail" placeholder="Your Email">
+                                    <label for="mail">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phone" placeholder="Your Phone Number">
+                                    <label for="phone">Your Phone Number</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-floating">
+                                    <select class="form-select" id="service">
+                                        <option value="social_media_marketing">Social Media Marketing</option>
+                                        <option value="social_media_management">Social Media Management</option>
+                                        <option value="seo">Search Engine Optimization (SEO)</option>
+                                        <option value="lead_generation">Lead Generation (Google Ads & Meta Ads)</option>
+                                        <option value="local_seo">Local SEO</option>
+                                        <option value="linkedin_marketing">LinkedIn Marketing</option>
+                                        <option value="ppc">PPC Advertisement</option>
+                                        <option value="personal_branding">Personal Branding</option>
+                                        <option value="content_creation">Content Creation</option>
+                                        <option value="web_development">Web Development</option>
+                                        <option value="ecommerce_development">E-Commerce Development</option>
+                                        <option value="mobile_app_development">Mobile Application Development</option>
+                                    </select>
+                                    
+                                    <label for="service">Choose A Service</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 200px"></textarea>
-                                    <label for="message">Message</label>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 130px"></textarea>
+                                    <label for="message">Message (Project Details)</label>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                <button class="btn btn-primary w-100 py-3" type="submit">Submit Request</button>
                             </div>
                         </div>
                     </form>
@@ -145,9 +173,8 @@
             </div>
         </div>
     </div>
-    <!-- Contact End -->
 
-
+  
     <!-- Google Map Start -->
     <div class="d-flex justify-content-center align-items-center mb-5 pt-5 px-0 wow fadeIn mx-auto" data-wow-delay="0.1s">
       
@@ -155,83 +182,98 @@
     </div>
     <!-- Google Map End -->
 
+    <!-- <h2>Customer Reviews</h2>
+    <div id="reviews"></div> -->
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        
+       
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-3">Head Office</h5>
+                <p class="mb-1"><i class="fa fa-map-marker-alt me-3"></i>Ammapet, Salem-636015.</p>
+                <p class="mb-1"><i class="fa fa-phone-alt me-3"></i>+91-880-766-8998</p>
+                <p class="mb-1"><i class="fa fa-envelope me-3"></i>nkmoderntechnology24@gmail.com</p>
+                <h5 class="text-light mb-3 mt-3 ">Hosur Branch Office</h5>
+                <p class="mb-2 branch_add d-flex"><i class="fa fa-map-marker-alt me-3 mt-2"></i>Neathaji Nagar,Mookondapalli,Banglore Main Road  Hosur - 635126</p>
+                <h5 class="text-light mb-3 mt-3">Chennai Branch Office</h5>
+                <p class="mb-1 branch_add d-flex"><i class="fa fa-map-marker-alt me-3 mt-2"></i>BagavathsingNagar, Chitipuniyam, Mahindra World City, Chengalpattu -603204</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-882-540-3712</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://www.facebook.com/profile.php?id=61556951956856&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href="https://www.instagram.com/nk_modern_technology?igsh=NzU4OWs1dWs3dDY2"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href="https://www.linkedin.com/company/nk-modern-technology/"><i class="fab fa-linkedin-in"></i></a>
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 q_links">
+                <h5 class="text-light mb-4">Quick Links</h5>
+                <a class="btn btn-link" href="about">About Us</a>
+                <a class="btn btn-link" href="web_development">Web development</a>
+                <a class="btn btn-link" href="digital_marketing">Digital Marketing</a>
+                <a class="btn btn-link" href="data_science">Data science</a>
+                <a class="btn btn-link" href="feature">Feature</a>
+                <a class="btn btn-link" href="blog">Blog</a>
+                <a class="btn btn-link" href="contact">Contact Us</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Gallery</h5>
+                <div class="row g-2">
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-1.jpg" alt="Image">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-1.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-2.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-3.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-4.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-5.jpg" alt="Image">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid rounded" src="img/project-6.jpg" alt="Image">
-                        </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-2.jpg" alt="Image">
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Newsletter</h5>
-                    <p>Stay updated with the latest trends, tips, and insights from NK Modern Technology—your go-to source for digital success!</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-3.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-4.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-5.jpg" alt="Image">
+                    </div>
+                    <div class="col-4">
+                        <img class="img-fluid rounded" src="img/project-6.jpg" alt="Image">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">NK Modern Technology</a>
-                    </div>
+            <div class="col-lg-3 col-md-6 newsletter">
+                <h5 class="text-light mb-4">Newsletter</h5>
+                <p>Stay updated with the latest trends, tips, and insights from NK Modern Technology—your go-to source for digital success!</p>
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
+    <div class="container-fluid copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By NK modern technology</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="tel:8807668998" class="call-link" aria-label="Call Us">
+    <img src="img/call.jpg" alt="Call" />
+  </a>
+  <a href="https://wa.me/8807668998" target="_blank" class="whatsapp-link" aria-label="Chat on WhatsApp">
+    <img src="img/whatsapp-logo-1.png" alt="WhatsApp" />
+  </a>
 
 
     <!-- JavaScript Libraries -->
@@ -243,9 +285,89 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
+    <!-- <script>
+        const apiKey = "AIzaSyBeMd1lKzYuUL5mJqu9DgeSvW__Lyk2cas";
+        const placeId = "ChIJ3SpWq6BFFDkRZbH1eOq7f30";  // Your Place ID
+        const apiUrl = "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJi5R8z8h7JjoRqBg-4sXfKww&fields=name,reviews,rating&key=AIzaSyBeMd1lKzYuUL5mJqu9DgeSvW__Lyk2cas";
+        
+        // Using AllOrigins for CORS proxy
+        const corsUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
+    
+        fetch(corsUrl)
+            .then(response => response.json())
+            .then(data => {
+                const parsedData = JSON.parse(data.contents); // Parse the response content
+                console.log("API Response:", parsedData);  // Log the full response
+    
+                if (parsedData.result && parsedData.result.reviews) {
+                    const reviewsDiv = document.getElementById("reviews");
+                    parsedData.result.reviews.forEach(review => {
+                        const reviewElement = document.createElement("p");
+                        reviewElement.textContent = `${review.author_name}: ${review.text}`;
+                        reviewsDiv.appendChild(reviewElement);
+                    });
+                } else {
+                    console.log("No reviews found.");
+                }
+            })
+            .catch(error => console.error("Error fetching reviews:", error));
+    </script> -->
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "T1lDL9ozWfXUt6cdg",
+  });
+})();
+</script>
+<script>
+    
+   
+    
+    document.getElementById("quote-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+    
+     // Collect form data
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("mail").value.trim();
+          const phone = document.getElementById("phone").value.trim();
+          const service = document.getElementById("service").value;
+          const message = document.getElementById("message").value.trim();
+    
+    
+      // Create an object for the EmailJS template variables
+      const templateParams = {
+            user_name: name,
+            user_email: email,
+            user_phone: phone,
+            selected_service: service,
+            user_message: message,
+          };
+    
+      // Send email via EmailJS
+      emailjs.send("service_g3d0anx", "template_y38fl9o", templateParams)
+        .then(
+          function (response) {
+            alert("Message sent successfully! Thank you.");
+            console.log("SUCCESS!", response.status, response.text);
+    
+            // Reset the form fields
+            document.getElementById("quote-form").reset();
+          },
+          function (error) {
+            alert("Failed to send the message. Please try again later.");
+            console.log("FAILED...", error);
+          }
+        );
+    });
+    </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+<!-- AIzaSyBeMd1lKzYuUL5mJqu9DgeSvW__Lyk2cas -->

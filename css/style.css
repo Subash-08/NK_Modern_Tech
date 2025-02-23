@@ -47,6 +47,7 @@
     .newsletter button {
         width: 100%;
     }
+    
 }
 .footer .col-lg-3:nth-child(4) {
     padding: 25px;
@@ -54,7 +55,8 @@
 @media (max-width: 1300px) {
     .footer .row {
         flex-wrap: wrap;
-        justify-content: center; /* Centers the columns */
+        justify-content: left !important; 
+        /* Centers the columns */
         /* text-align: center; */
     }
 
@@ -63,6 +65,7 @@
         margin-bottom: 20px; /* Adds space between elements */
         padding: 24px;
     }
+   
 
 }
 
@@ -73,7 +76,7 @@
     }
 
     .footer p {
-        flex-direction: column; /* Icon on top, text below for small screens */
+        /* flex-direction: column; Icon on top, text below for small screens */
     }
 }
 .back-to-top {

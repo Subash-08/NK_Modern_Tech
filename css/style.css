@@ -75,9 +75,7 @@
         
     }
 
-    .footer p {
-        /* flex-direction: column; Icon on top, text below for small screens */
-    }
+   
 }
 .back-to-top {
     position: fixed;
@@ -779,3 +777,56 @@
 }
 /*** Attractions End ***/
 
+.review-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Limits text to 4 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 6.4em; /* Adjust based on font-size */
+    transition: max-height 0.3s ease;
+}
+
+.review-text.expanded {
+    display: block;
+    max-height: none; /* Allows full height when expanded */
+}
+
+.review-text {
+    overflow: hidden;
+    max-height: 6.4em; /* Approximately 4 lines (adjust as needed) */
+    transition: max-height 0.3s ease-in-out;
+    position: relative;
+}
+
+.review-text.expanded {
+    max-height: 1000px; /* Large enough to show full text */
+}
+.review-text {
+    overflow: hidden;
+    max-height: 4.5em; /* Around 4 lines based on font size */
+    transition: max-height 0.3s ease-in-out;
+    position: relative;
+}
+
+.review-text.expanded {
+    max-height: 1000px; /* Expand to full height */
+}
+.review-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Show only 4 lines */
+    -webkit-box-orient: vertical;
+    transition: all 0.3s ease-in-out;
+}
+
+.review-text.expanded {
+    -webkit-line-clamp: unset;
+    max-height: none;
+}
+
+.testimonial-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -127,7 +127,7 @@ header h1 {
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
-    .d-flex {
+    .d-flex-blog {
         flex-direction: column;
         text-align: center;
     }
